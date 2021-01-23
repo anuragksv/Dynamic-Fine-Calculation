@@ -9,7 +9,7 @@ class driver{
 		int v[7],t[7],age,n,flag;
 		void accept(){
 			cout<<"\t>>>>>>>>>>TRAFFIC RULES VIOLATION CHECK<<<<<<<<<<\n\n";
-			cout<<"Enter Lisence Number :\t";//licence lekapothey?
+			cout<<"Enter Lisence Number :\t";
 			gets(lc_id);
 			cout<<"Enter Name of Driver :\t";
 			gets(name);
@@ -19,8 +19,8 @@ class driver{
 				quit();
 				exit(1);
 			}
-			cout<<"\n\n\t**********VIOLATION HISTORY**********\n\n";//history check chestunava ? chupistunav?
-			cout<<"1.Violated Safety Rules (Helmet/Seat Belt)      : \t";//ikada emi enter cheyali?
+			cout<<"\n\n\t**********VIOLATION HISTORY**********\n\n";
+			cout<<"1.Violated Safety Rules (Helmet/Seat Belt)      : \t";
 			cin>>v[0];
 			cout<<"2.Travelled Without License                     : \t";
 			cin>>v[1];
@@ -30,7 +30,7 @@ class driver{
 			cin>>v[3];
 			cout<<"5.Drink and Drive                               : \t";
 			cin>>v[4];
-			cout<<"6.Travelled Without/Expired Insurance           : \t";//insurance rendu sarlu enduku?
+			cout<<"6.Travelled Without/Expired Insurance           : \t";
 			cin>>v[5];
 			if(v[5]>=0){
 				t[5]=5;
@@ -57,7 +57,7 @@ class vehicle : public driver{
 			cout<<"\n\n\t**********VEHICLE DETAILS**********\n\n";
 			cout<<"Enter Registation Number of the vehicle    : \t";
 			cin>>rc_no;
-			cout<<"Vehicle under active Insurace Policy (Y/N) : \t";//**
+			cout<<"Vehicle under active Insurace Policy (Y/N) : \t";
 			cin>>ins;
 			cout<<"Months since last pollution check          : \t";
 			cin>>lpc;
